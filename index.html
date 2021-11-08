@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="sass/style.css">
+</head>
+<body>
+
+    <button id="modal" style="margin: 12px; cursor: pointer;">Show Modal</button>
+
+    <div class="modal-container">
+        <div class="content">
+            <div class="top">
+                <h2>Create a new account</h2>
+                <p>It`s simple, and free.</p>
+                <i class="fas fa-times-circle close"></i>
+            </div>
+            <form action="" name="myform">
+
+                <div class="block">
+                    <label for="user">Username:</label>&nbsp;
+                    <input type="text" id="user" placeholder="Username" onblur="nom()">
+                    <hr>
+                </div>
+
+                <span>
+                    <!-- <i class="fas fa-check"></i> -->
+                </span>
+
+                <div class="block">
+                    <label for="email">Email address:</label>&nbsp;
+                    <input type="email" id="email" placeholder="Email" onblur="nom2()">
+                    <hr>
+                </div>
+
+                <span>
+                    <!-- <i class="fas fa-check"></i> -->
+                </span>
+
+                <div class="block">
+                    <label for="password">Password:</label>&nbsp;
+                    <input type="password" id="password" placeholder="Password" onblur="nom3()">
+                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-eye-slash"></i>
+                    <hr>
+                </div>
+
+                <span>
+                    <!-- <i class="fas fa-check"></i> -->
+                </span>
+
+                <button>Sign Up</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

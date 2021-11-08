@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #d4d4d4;
+}
+
+#modal {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  background: #2d4ca0;
+  color: white;
+  padding: 10px 15px;
+  border-color: #2d4ca0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal-container .content {
+  width: 475px;
+  height: 375px;
+  background: grey;
+  border-radius: 5px;
+}
+
+.modal-container .content .top {
+  position: relative;
+  background: black;
+  padding: 15px 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+}
+
+.modal-container .content .top i {
+  position: absolute;
+  left: 91%;
+  top: 15%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-container .content .top i:hover {
+  color: red;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.modal-container .content .top p {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.modal-container .content .top h2 {
+  font-family: sans-serif;
+}
+
+.modal-container .content form {
+  position: relative;
+}
+
+.modal-container .content form .block {
+  padding: 15px;
+}
+
+.modal-container .content form .block hr {
+  margin-top: 17px;
+}
+
+.modal-container .content form .block input {
+  padding: 7px 10px;
+  width: 70%;
+  outline: none;
+}
+
+.modal-container .content form .block input:focus {
+  border-radius: 5px;
+  outline: none;
+  border-color: aqua;
+  font-size: 15px;
+}
+
+.modal-container .content form .block label {
+  font-size: 18px;
+}
+
+.modal-container .content form .block .fa-eye {
+  position: absolute;
+  top: 67%;
+  left: 80%;
+  cursor: pointer;
+}
+
+.modal-container .content form .block .fa-eye-slash {
+  position: absolute;
+  top: 67%;
+  left: 80%;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.modal-container .content form button {
+  position: relative;
+  top: -3px;
+  left: 77%;
+  background: green;
+  color: white;
+  padding: 8px 12px;
+  border-color: green;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal-container .content form span {
+  position: absolute;
+  font: 20px Arial;
+}
+
+.modal-container .content form span:nth-of-type(1) {
+  left: 89%;
+  top: 7%;
+}
+
+.modal-container .content form span:nth-of-type(2) {
+  left: 94%;
+  top: 36%;
+}
+
+.modal-container .content form span:nth-of-type(3) {
+  left: 88%;
+  top: 66%;
+}
+
+.modal-container .content form .fa-check {
+  color: #32e132;
+}
+
+.modal-container .content form .fa-times {
+  color: red;
+}
+
+.bgactive {
+  visibility: visible;
+  opacity: 1;
+  -webkit-animation: modals 0.5s ease-in;
+          animation: modals 0.5s ease-in;
+}
+
+@-webkit-keyframes modals {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes modals {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

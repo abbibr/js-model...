@@ -1,0 +1,191 @@
+$color: white;
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: rgb(212, 212, 212);
+}
+
+#modal
+{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    background: rgb(45, 76, 160);
+    color: $color;
+    padding: 10px 15px;
+    border-color: rgb(45, 76, 160);
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(1.5);
+}
+.modal-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+
+    .content
+    {
+        width: 475px;
+        height: 375px;
+        background: grey;
+        border-radius: 5px;
+
+        .top
+        {
+            position: relative;
+            background: black;
+            padding: 15px 25px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            color: $color;
+
+            i
+            {
+                position: absolute;
+                left: 91%;
+                top: 15%;
+                font-size: 18px;
+                cursor: pointer;
+
+                &:hover
+                {
+                    color: red;
+                    transition: .5s;
+                }
+            }
+
+            p
+            {
+                margin-top: 10px;
+                font-size: 17px;
+            }
+            h2
+            {
+                font-family: sans-serif;
+            }
+        }
+
+        form
+        {
+            position: relative;
+
+            .block
+            {
+                padding: 15px;
+
+                hr
+                {
+                    margin-top: 17px;
+                }
+                input
+                {
+                    padding: 7px 10px;
+                    width: 70%;
+                    outline: none;
+
+                    &:focus
+                    {
+                        border-radius: 5px;
+                        outline: none;
+                        border-color: aqua;
+                        font-size: 15px;
+                    }
+                }
+                label
+                {
+                    font-size: 18px;
+                }
+                .fa-eye
+                {
+                    position: absolute;
+                    top: 67%;
+                    left: 80%;
+                    cursor: pointer;
+                }
+                .fa-eye-slash
+                {
+                    position: absolute;
+                    top: 67%;
+                    left: 80%;
+                    cursor: pointer;
+                    visibility: hidden;
+                }
+            }
+            button
+            {
+                position: relative;
+                top: -3px;
+                left: 77%;
+                background: green;
+                color: $color;
+                padding: 8px 12px;
+                border-color: green;
+                outline: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            span
+            {
+                position: absolute;
+                font: 20px Arial;
+            }
+            span:nth-of-type(1)
+            {
+                left: 89%;
+                top: 7%
+            }
+            span:nth-of-type(2)
+            {
+                left: 94%;
+                top: 36%
+            }
+            span:nth-of-type(3)
+            {
+                left: 88%;
+                top: 66%
+            }
+            .fa-check
+            {
+                color: rgb(50, 225, 50);
+            }
+            .fa-times
+            {
+                color: red;
+            }
+        }
+    }
+}
+
+.bgactive
+{
+    visibility: visible;
+    opacity: 1;
+    animation: modals 0.5s ease-in;
+}
+
+@keyframes modals
+{
+    from
+    {
+        transform: scale(0);
+    }
+    to
+    {
+        transform: scale(1);
+    }
+}
